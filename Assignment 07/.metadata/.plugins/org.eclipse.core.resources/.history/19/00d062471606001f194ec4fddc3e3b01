@@ -1,0 +1,12 @@
+package com.grkp.sunbeam.demos;
+
+import static com.grkp.sunbeam.demos.MenuCode.*;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

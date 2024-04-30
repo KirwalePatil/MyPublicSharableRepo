@@ -1,0 +1,10 @@
+package com.grkp.sunbeam.demos;
+
+import java.util.Scanner;
+
+public final class MenuCode {
+public static int menu(Scanner sc) {
+	
+	return sc.nextInt();
+}
+}

@@ -1,0 +1,54 @@
+package com.grkp.sunbeam.demos;
+
+import static com.grkp.sunbeam.demos.MenuCode.*;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		int choice, counter;
+		Scanner sc = new Scanner(System.in);
+		Player[] cricketTeam = new Player[11];
+		while ((choice = menu(sc)) != 0) {
+			switch (choice) {
+			case 1:
+				if (cricketTeam[10] != null) {
+					System.out.print("A team of 11 players already exists, do you want to recreate a team (y/n) ?:\t");
+					if (sc.next().equalsIgnoreCase("y"))
+						for (int i = 0; i < cricketTeam.length; i++)
+							cricketTeam[i].accept(sc);
+				} else
+					for (int i = 0; i < cricketTeam.length; i++) {
+						cricketTeam[i]=new Cricketer();
+						cricketTeam[i].accept(sc);
+					}
+				break;
+			case 2:
+				if (cricketTeam[10] != null) {counter=0;
+					for (Player player : cricketTeam) {
+						if(player instanceof Cricketer) {
+							Cricketer c=(Cricketer)player;
+							counter+=c.getRuns();
+						}
+					}
+				}
+				break;
+			case 3:
+
+				break;
+			case 4:
+
+				break;
+			case 5:
+
+				break;
+			default:
+				break;
+			}
+		}
+		System.out.println("Cricbuzz app is been terminated...!");
+	}
+
+}

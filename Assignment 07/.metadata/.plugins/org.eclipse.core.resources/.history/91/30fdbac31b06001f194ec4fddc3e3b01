@@ -1,0 +1,36 @@
+package com.grkp.sunbeam.demos;
+
+import static com.grkp.sunbeam.demos.MenuCode.*;
+
+import java.util.Scanner;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		int choice;
+		Scanner sc = new Scanner(System.in);
+		while ((choice = menu(sc)) != 0) {
+			switch (choice) {
+			case 1:
+
+				break;
+			case 2:
+
+				break;
+			case 3:
+
+				break;
+			case 4:
+
+				break;
+			case 5:
+
+				break;
+			default:
+				break;
+			}
+		}
+		System.out.println("Cricbuzz app is been terminated...!");
+	}
+
+}

@@ -1,0 +1,36 @@
+package com.grkp.sunbeam.demos;
+
+public class Cricketer extends Player implements Batter, Bowler {
+	private int runs;
+	private int wickets;
+
+	public Cricketer() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Cricketer(int id, String name, int age, int matchesPlayed) {
+		super(id, name, age, matchesPlayed);
+		// TODO Auto-generated constructor stub
+		this.runs = runs;
+		this.wickets = wickets;
+	}
+
+	@Override
+	public int getRuns() {
+		return runs;
+	}
+
+	public void setRuns(int runs) {
+		this.runs = runs;
+	}
+
+	@Override
+	public int getWickets() {
+		return wickets;
+	}
+
+	public void setWickets(int wickets) {
+		this.wickets = wickets;
+	}
+
+}

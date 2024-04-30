@@ -1,0 +1,62 @@
+package com.grkp.sunbeam.demos;
+
+public class Player {
+	private int id;
+	private String name;
+	private int matchesPlayed;
+
+	public Player() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Player(int id, String name, int matchesPlayed) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.matchesPlayed = matchesPlayed;
+	}
+
+	@Override
+	public String toString() {
+		return "[id=" + this.id + ", name=" + this.name + ", matchesPlayed=" + this.matchesPlayed + "]";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if (obj == null)
+			return false;
+		if (this == obj)
+			return true;
+		if (obj instanceof Player) {
+			Player p = (Player) obj;
+			return this.id == p.id && this.name == p.name && this.matchesPlayed == p.matchesPlayed;
+		}
+		return false;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getMatchesPlayed() {
+		return matchesPlayed;
+	}
+
+	public void setMatchesPlayed(int matchesPlayed) {
+		this.matchesPlayed = matchesPlayed;
+	}
+	
+}
